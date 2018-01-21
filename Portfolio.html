@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<title>Dean's Page</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<nav class="portfolio_nav">
+		<a href="index.html" style="color:white;">Home</a>
+		<a href="Resume.html" style="color:white;">Resume</a>
+		<a href="Portfolio.html" style="color:white;">Portfolio</a>
+		<a href="Random.html" style="color:white;">Travel Gallery</a>
+	
+	</nav>
+	
+	
+	<body  id="demo" style="border:0;">
+	<div class="portfolio_img">
+	<h1 class="portfolio_heading">Dean Rice's Portfolio</h1>
+	<p class="portfolio_text">My latest project is a scheduling software application that I have been developing in conjunction with the UNF English 
+	department and UNF Writing Center. As of right now, the UNF English department's course scheduling process for each semester is a time and labor intensive manual 
+	process. Consequently, each semester several English faculty must exert time and energy using this manual process to match English professors to 
+	appropriate English courses. My goal with this project is to develop a software solution that eliminates much of the time and labor of the current 
+	scheduling process by utilizing computation to execute the matching portion of the scheduling process. In order to accomplish this goal I designed an application that 
+	will allow a user to upload an excel file (the format requested by my colleagues) that contains the data for which courses will be offered in the coming
+	semester. The software uses this data set in conjunction with a second data set (also an excel file) that contains information corresponding to the course
+	preferences of the English professors that will be teaching courses for the semester. The user will then be able to run the software, creating a one semester
+	schedule in which all the courses to be offered have been matched to an appropriate professor(appropriateness is based on professor's preferences and qualifications). 
+	So far, I have implemented the majority of the code for the back-end, with only a few methods and one class to code over the coming weeks to be done with that part of the software.
+	I am also currently learning how to use Java Fx so that I can begin developing the UI after I finish the back-end. I hope to have a testable and demoable product in the coming months!
+	</p>
+	
+		
+ 
+	
+	
+	
+	
+	<div class="dropdown" >
+		<button onclick="dropDownMenu()" class="dropbtn">Click to View<br>UNF WC Scheduling Software<br>Source Code, Data Sets,<br>and Design Documents</button>
+		<div id="myDropdown" class="dropdown-content">
+		<a href="Main.java" target="_blank">Main.java</a>
+		<a href="Input.java" target="_blank">Input.java</a>
+		<a href="Professor.java" target="_blank">Professor.java</a>
+		<a href="TenureTrackFaculty.java" target="_blank">TenureTrackFaculty.java</a>
+		<a href="NonTenureTrackFaculty.java" target="_blank">NonTenureTrackFaculty.java</a>
+		<a href="DoublyLinkedList.java" target="_blank">DoublyLinkedList.java</a>
+		<a href="Node.java" target="_blank">Node.java</a>
+		<a href="Course.java" target="_blank">Course.java</a>
+		<a href="Match.java" target="_blank">Match.java</a>
+		<a href="English+Faculty+Survey.xls" target="_blank">English+Faculty+Survey.xls</a>
+		<a href="Courses_to_be_offered.xls" target="_blank">Courses_to_be_offered.xls</a>
+		<a href="UNF WC Scheduling Software - High Level Architecture.docx" target="_blank">High Level Architecture</a>
+		<a href="UNF WC Scheduling Software-Data Structure.docx" target="_blank">Data Structure Analysis</a>
+		<a href="UNF WC Scheduling Software-UML class diagram 2nd update.pptx" target="_blank">UML Class Diagram</a>
+		<a href="UNF WC Scheduling Software Basic Procedure Updated.docx" target="_blank">Control Flow and Basic Procedure Description</a>
+		</div>
+	</div>
+	
+	<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "Abracadabra!";
+	}
+	
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function dropDownMenu() {
+		document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		var openDropdown = dropdowns[i];
+		if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+	</script>
+	<br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br><br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	</div>
+	</body>
+</html>
